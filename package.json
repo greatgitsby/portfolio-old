@@ -19,5 +19,12 @@
     "eslint-config-next": "^11.0.1",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.1"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio site using Next.js and React.",
+  "main": "src/index.js",
+  "repository": "https://github.com/greatgitsby/portfolio.git",
+  "author": "Trey Moen <treyboy484@gmail.com>",
+  "license": "MIT"
 }
