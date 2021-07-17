@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "lint": "next lint",
+    "start": "next start",
+    "postbuild": "scp -r ./out/* mango@mango.local:/usr/local/var/www/"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^11.0.1",
+    "raw-loader": "^4.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^6.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1"
+  }
+}

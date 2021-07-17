@@ -1,0 +1,79 @@
+body {
+  font-family: 'IBM Plex Serif', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  padding: 5vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #e6e3d8;
+}
+
+a {
+  text-decoration: none;
+  color: #1c4969;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+.header {
+  padding: 20px 0 20px 0;
+}
+
+.header-text {
+  padding: 0 20px 0 0;
+}
+
+.text-link {
+  border: 2px;
+}
+
+.blog-section {
+  padding: 1vh 0 0 0;
+}
+
+.blog-image {
+  max-width: 100%;
+}
+
+.blog-section div {
+  max-width: 800px;
+}
+
+.blog-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-section li {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 10px 0px;
+}
+
+.blog-section li:last-child {
+  border: none;
+}
+
+.blog-section li a {
+  text-decoration: none;
+	font-weight: bold;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+  max-width: 100%;
+}
+
+.blog-section li a:hover {
+  font-size: 30px;
+}
+
