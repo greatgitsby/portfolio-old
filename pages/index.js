@@ -43,7 +43,7 @@ function Homepage(props) {
                 <Link href={`/posts/${p.slug}`} passHref>
                   <a>{p.title}</a>
                 </Link>
-                <span>{new Date(p.createdAt).toLocaleDateString()} - {p.description}</span>
+                <span className="blog-entry-text">{new Date(p.createdAt).toLocaleDateString()} - {p.description}</span>
               </li>
             ))
           }

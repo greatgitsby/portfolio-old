@@ -45,6 +45,10 @@ a {
   max-width: 100%;
 }
 
+.blog-entry-text {
+  font-size: 18px;
+}
+
 .blog-section div {
   max-width: 800px;
 }
