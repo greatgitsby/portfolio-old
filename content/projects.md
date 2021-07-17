@@ -2,8 +2,8 @@
 title: projects
 description: A few of the projects I have worked on.
 published: true
-createdAt: '2020-07-13'
-updatedAt: '2021-07-17T20:17:56.483Z'
+createdAt: '2021-07-13T00:00:00.000Z'
+updatedAt: '2021-07-17T20:19:35.598Z'
 ---
 
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
