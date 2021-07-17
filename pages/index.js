@@ -48,14 +48,12 @@ export const getStaticProps = async () => {
       .map(async (filename) => {
         const content = await import(`../content/${filename}`);
         const data = matter(content.default);
-
-        return Promise.resolve({
-          title: data.data.title,
-          description: data.data.description,
-          createdAt: data.data.createdAt,
-          updatedAt: data.data.updatedAt,
-          slug: path.parse(filename).name
-        });
+        
+        delete data.content;
+        
+        data.slug = path.parse(filename).name
+        
+        return Promise.resolve({ ...data });
       })
   );
   

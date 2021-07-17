@@ -3,6 +3,7 @@
     "dev": "next",
     "build": "next build && next export",
     "lint": "next lint",
+    "lint:staged": "lint-staged",
     "start": "next start",
     "postbuild": "scp -r ./out/* mango@mango.local:/usr/local/var/www/"
   },

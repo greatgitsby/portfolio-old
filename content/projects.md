@@ -1,8 +1,10 @@
 ---
-title: "projects"
-description: "A few of the projects I have worked on."
-createdAt: "2020-07-13"
-updatedAt: "2020-07-13"
+title: projects
+description: A few of the projects I have worked on.
+published: true
+createdAt: '2020-07-13'
+updatedAt: '2020-07-13'
+updatedOn: '2021-07-17T20:16:42.624Z'
 ---
 
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
