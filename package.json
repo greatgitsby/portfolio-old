@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "lint": "next lint",
+    "lint:staged": "lint-staged",
+    "start": "next start",
+    "postbuild": "scp -r ./out/* mango@mango.local:/usr/local/var/www/"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^11.0.1",
+    "raw-loader": "^4.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^6.0.2"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio site using Next.js and React.",
+  "main": "src/index.js",
+  "repository": "https://github.com/greatgitsby/portfolio.git",
+  "author": "Trey Moen <treyboy484@gmail.com>",
+  "license": "MIT"
+}
