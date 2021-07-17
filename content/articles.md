@@ -3,8 +3,7 @@ title: cool articles
 description: A collection of articles that have influenced my thinking.
 published: true
 createdAt: '2020-07-14'
-updatedAt: '2020-07-14'
-updatedOn: '2021-07-17T20:16:42.623Z'
+updatedAt: '2021-07-17T20:17:56.481Z'
 ---
 
 - [Jose Browne - On Coding, Ego, and Attention](https://josebrowne.com/on-coding-ego-and-attention)
