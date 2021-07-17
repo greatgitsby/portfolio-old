@@ -16,6 +16,8 @@
     "react-markdown": "^6.0.2"
   },
   "devDependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "husky": "^7.0.1",

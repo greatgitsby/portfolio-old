@@ -36,7 +36,8 @@ function PostTemplate({ content, data }) {
       </Head>
 
       <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <h3>created: {new Date(frontmatter.createdAt).toLocaleDateString()}</h3>
+      <h3>updated: {new Date(frontmatter.updatedAt).toLocaleDateString()}</h3>
       
       <ReactMarkdown components={renderers} children={content} />
 
@@ -50,12 +51,11 @@ export const getStaticProps = async (context) => {
   const file = await import(`../../content/${slug}.md`); 
   const data = matter(file.default);
 
+  delete data.orig;
+
   return { 
     props: {
-      content: data.content,
-      data: data.data,
-      isEmpty: data.isEmpty,
-      excerpt: data.excerpt
+      ...data
     }
   };
 }

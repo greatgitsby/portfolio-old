@@ -4,6 +4,9 @@ import Head from "next/head";
 
 import matter from "gray-matter";
 
+import { Description, GitHub, LinkedIn, Instagram, MailOutlineRounded, Twitter } from "@material-ui/icons";
+import { IconButton } from "@material-ui/core";
+
 function Homepage(props) {
   return (
     <>
@@ -15,6 +18,21 @@ function Homepage(props) {
         <span className="header-text"><Link href="/resume.pdf" passHref><a>résumé</a></Link></span>
       </div>
 
+      <div className="icons">
+				<IconButton color="secondary" href="https://github.com/greatgitsby" aria-label="github" target="blank">
+					<GitHub style={{ color: "#1c4969" }} />
+				</IconButton>
+				<IconButton color="secondary" href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
+					<LinkedIn style={{ color: "#1c4969" }} />
+				</IconButton>
+				<IconButton color="secondary" href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
+					<Instagram style={{ color: "#1c4969" }} />
+				</IconButton>
+				<IconButton color="secondary" href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
+					<MailOutlineRounded style={{ color: "#1c4969" }} />
+				</IconButton>
+			</div>
+
       <span className="subtitle">posts</span>
       <div className="blog-section">
         <div>
@@ -25,7 +43,7 @@ function Homepage(props) {
                 <Link href={`/posts/${p.slug}`} passHref>
                   <a>{p.title}</a>
                 </Link>
-                <span>{p.createdAt} - {p.description}</span>
+                <span>{new Date(p.createdAt).toLocaleDateString()} - {p.description}</span>
               </li>
             ))
           }
@@ -47,13 +65,11 @@ export const getStaticProps = async () => {
       .filter(p => p.endsWith(".md"))
       .map(async (filename) => {
         const content = await import(`../content/${filename}`);
-        const data = matter(content.default);
+        const frontmatter = matter(content.default);
         
-        delete data.content;
+        frontmatter.data.slug = path.parse(filename).name
         
-        data.slug = path.parse(filename).name
-        
-        return Promise.resolve({ ...data });
+        return Promise.resolve({ ...frontmatter.data });
       })
   );
   

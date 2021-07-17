@@ -3,7 +3,7 @@ title: projects
 description: A few of the projects I have worked on.
 published: true
 createdAt: '2021-07-13T00:00:00.000Z'
-updatedAt: '2021-07-17T20:19:35.598Z'
+updatedAt: '2021-07-17T21:19:36.360Z'
 ---
 
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
@@ -38,4 +38,4 @@ TBD
 
 TBD
 
-![Image](../../img/graph.png)
+![Image](img/graph.png)

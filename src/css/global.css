@@ -20,8 +20,13 @@ a {
   font-size: 30px;
 }
 
+.icons {
+  padding: 15px 0 15px 0;
+  margin-left: -10px;
+}
+
 .header {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
 }
 
 .header-text {
@@ -53,6 +58,12 @@ a {
 .blog-section li {
   font-size: 24px;
   border-bottom: 1px solid #ccc;
+  padding: 10px 0 10px 0px;
+}
+
+.blog-section li:first-child {
+  font-size: 24px;
+  border-top: 1px solid #ccc;
   padding: 10px 0 10px 0px;
 }
 
