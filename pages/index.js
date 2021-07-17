@@ -15,7 +15,7 @@ function Homepage(props) {
 
       <div className="header">
         <span className="header-text"><Link href="/me" passHref><a>about me</a></Link></span>
-        <span className="header-text"><Link href="/resume.pdf" passHref><a>résumé</a></Link></span>
+        <span className="header-text"><Link href="/resume.pdf" passHref><a target="_blank">résumé</a></Link></span>
       </div>
 
       <div className="icons">
@@ -43,7 +43,7 @@ function Homepage(props) {
                 <Link href={`/posts/${p.slug}`} passHref>
                   <a>{p.title}</a>
                 </Link>
-                <span className="blog-entry-text">{new Date(p.createdAt).toLocaleDateString()} - {p.description}</span>
+                <span className="blog-entry-text">{p.createdAt.toLocaleDateString()} - {p.description}</span>
               </li>
             ))
           }
@@ -60,18 +60,23 @@ export const getStaticProps = async () => {
 
   const filenames = await fs.readdir("./content");
 
-  const pages = await Promise.all(
+  let pages = await Promise.all(
     filenames
       .filter(p => p.endsWith(".md"))
       .map(async (filename) => {
         const content = await import(`../content/${filename}`);
         const frontmatter = matter(content.default);
         
-        frontmatter.data.slug = path.parse(filename).name
-        
+        frontmatter.data.slug = path.parse(filename).name;
+        frontmatter.data.createdAt = new Date(frontmatter.data.createdAt);
+        frontmatter.data.updatedAt = new Date(frontmatter.data.updatedAt);
+
         return Promise.resolve({ ...frontmatter.data });
       })
   );
+
+  // Sort pages by create date descending
+  pages = pages.sort((p1, p2) => p2.createdAt - p1.createdAt);
   
   return {
     props: {

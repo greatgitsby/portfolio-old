@@ -18,10 +18,12 @@
   "devDependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
+    "babel-plugin-superjson-next": "^0.3.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "husky": "^7.0.1",
-    "lint-staged": "^11.0.1"
+    "lint-staged": "^11.0.1",
+    "superjson": "^1.7.4"
   },
   "name": "portfolio",
   "version": "1.0.0",
