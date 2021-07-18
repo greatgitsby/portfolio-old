@@ -28,7 +28,7 @@ The management dashboard would hold very little value without the scraping platf
 
 ## Simple Monitors - Database REST API
 
-TBD
+I built a REST API for accessing our database configurations. It supported JWT and API key authentication and scope-based access for those using JWT to access (our admin dashboard). I used TypeScript and MongoDB as the primary technologies for this project, and it was hosted on a multi-node Heroku application.
 
 ## Simple Monitors - HTTP Client for TLS Spoofing
 
