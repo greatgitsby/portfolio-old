@@ -12,6 +12,11 @@ a {
   color: #1c4969;
 }
 
+svg {
+  width: 1em;
+  height: 1em;
+}
+
 .title {
   font-size: 48px;
 }

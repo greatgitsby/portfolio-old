@@ -19,19 +19,24 @@ function Homepage(props) {
       </div>
 
       <div className="icons">
-				<IconButton color="secondary" href="https://github.com/greatgitsby" aria-label="github" target="blank">
-					<GitHub style={{ color: "#1c4969" }} />
-				</IconButton>
-				<IconButton color="secondary" href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
-					<LinkedIn style={{ color: "#1c4969" }} />
-				</IconButton>
-				<IconButton color="secondary" href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
-					<Instagram style={{ color: "#1c4969" }} />
-				</IconButton>
-				<IconButton color="secondary" href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
-					<MailOutlineRounded style={{ color: "#1c4969" }} />
-				</IconButton>
-			</div>
+        
+        <IconButton color="secondary" href="https://github.com/greatgitsby" aria-label="github" target="blank">
+          <GitHub style={{ color: "#1c4969" }} />
+        </IconButton>
+        
+        <IconButton color="secondary" href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
+          <LinkedIn style={{ color: "#1c4969" }} />
+        </IconButton>
+        
+        <IconButton color="secondary" href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
+          <Instagram style={{ color: "#1c4969" }} />
+        </IconButton>
+        
+        <IconButton color="secondary" href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
+          <MailOutlineRounded style={{ color: "#1c4969" }} />
+        </IconButton>
+      
+      </div>
 
       <span className="subtitle">posts</span>
       <div className="blog-section">
