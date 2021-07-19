@@ -80,20 +80,30 @@ svg {
   border: none;
 }
 
+@media screen and (min-width: 550px) {
+  .blog-section li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    max-width: 100%;
+
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+  }
+
+  .blog-section li a:hover {
+    font-size: 30px;
+  }
+}
+
 .blog-section li a {
   text-decoration: none;
-	font-weight: bold;
-
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
   display: block;
   max-width: 100%;
 }
 
-.blog-section li a:hover {
-  font-size: 30px;
-}
 
