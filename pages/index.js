@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 
 import matter from "gray-matter";
 
-import { Description, GitHub, LinkedIn, Instagram, MailOutlineRounded, Twitter } from "@material-ui/icons";
+import GitHub from "@material-ui/icons/GitHub";
+import LinkedIn from "@material-ui/icons/LinkedIn";
+import Instagram from "@material-ui/icons/Instagram";
+import MailOutlineRounded from "@material-ui/icons/MailOutlineRounded";
 import { IconButton } from "@material-ui/core";
 
 function Homepage(props) {
@@ -20,20 +22,20 @@ function Homepage(props) {
 
       <div className="icons">
         
-        <IconButton color="secondary" href="https://github.com/greatgitsby" aria-label="github" target="blank">
-          <GitHub style={{ color: "#1c4969" }} />
+        <IconButton href="https://github.com/greatgitsby" aria-label="github" target="blank">
+          <GitHub />
         </IconButton>
         
-        <IconButton color="secondary" href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
-          <LinkedIn style={{ color: "#1c4969" }} />
+        <IconButton href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
+          <LinkedIn />
         </IconButton>
         
-        <IconButton color="secondary" href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
-          <Instagram style={{ color: "#1c4969" }} />
+        <IconButton href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
+          <Instagram />
         </IconButton>
         
-        <IconButton color="secondary" href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
-          <MailOutlineRounded style={{ color: "#1c4969" }} />
+        <IconButton href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
+          <MailOutlineRounded />
         </IconButton>
       
       </div>

@@ -4,7 +4,6 @@ body {
   padding: 5vh;
   max-width: 1000px;
   margin: 0 auto;
-  background: #e6e3d8;
 }
 
 a {
@@ -13,8 +12,9 @@ a {
 }
 
 svg {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
+  color: #000;
 }
 
 .title {
