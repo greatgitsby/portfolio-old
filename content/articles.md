@@ -8,3 +8,4 @@ updatedAt: '2021-07-17T22:22:09.540Z'
 
 - [Jose Browne - On Coding, Ego, and Attention](https://josebrowne.com/on-coding-ego-and-attention)
 - [Mitch Lee - Your writing style is costly](https://blog.mitchjlee.com/2020/your-writing-style-is-costly)
+- [Maya Kaczorowski - Burning out and quitting](https://mayakaczorowski.com/blogs/burnout)
