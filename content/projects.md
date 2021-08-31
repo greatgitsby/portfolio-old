@@ -8,12 +8,17 @@ updatedAt: '2021-07-17T21:19:36.360Z'
 
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
 
-## GFU EPIC Website
+# Personal
+## [Wedding Website](https://owen2moen.com)
 
-[Link to site](https://gfuprojects.com)
+I created a website for the wedding of myself and my super awesome fiancée Avery Owen. It will soon have RSVP functionality, custom wedding invite details, a page for our registry links, as well as a gallery of images on the homepage. Feel free to view it at [owen2moen.com](https://owen2moen.com).
 
-This website is for my Servant Engineering project during my third year at Fox. We created a workflow and set of resources for teachers at a local high school to submit project ideas and have us create what they had envisioned. The source is located [here](https://github.com/greatgitsby/gfu-project-site).
+# School
+## [GFU EPIC Website](https://gfuprojects.com)
 
+This website is for my Servant Engineering project during my third year at Fox. We created a workflow and set of resources for teachers at a local high school to submit project ideas and have us create what they had envisioned. Feel free to view it at [gfuprojects.com](https://gfuprojects.com). The source is located [here](https://github.com/greatgitsby/gfu-project-site).
+
+# Work
 ## Simple Monitors - Client Dashboard
 
 I built a dashboard for Simple Monitors clients to manage their webhook configurations, authentication, and release channels. It leverages HTML/CSS/jQuery and is served by a simple Node.js application and it runs on a simple Heroku configuration. 
