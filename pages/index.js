@@ -10,6 +10,8 @@ import MailOutlineRounded from "@material-ui/icons/MailOutlineRounded";
 import { IconButton } from "@material-ui/core";
 
 function Homepage(props) {
+  const iconColor = { color: "#5f0d0e" };
+
   return (
     <>
       <span className="title">{props.blogTitle}</span><br />
@@ -23,19 +25,19 @@ function Homepage(props) {
       <div className="icons">
         
         <IconButton href="https://github.com/greatgitsby" aria-label="github" target="blank">
-          <GitHub />
+          <GitHub style={iconColor} />
         </IconButton>
         
         <IconButton href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
-          <LinkedIn />
+          <LinkedIn style={iconColor} />
         </IconButton>
         
         <IconButton href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
-          <Instagram />
+          <Instagram style={iconColor} />
         </IconButton>
         
         <IconButton href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
-          <MailOutlineRounded />
+          <MailOutlineRounded style={iconColor} />
         </IconButton>
       
       </div>
