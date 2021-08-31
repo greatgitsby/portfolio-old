@@ -32,10 +32,10 @@ I built a REST API for accessing our database configurations. It supported JWT a
 
 ## Simple Monitors - HTTP Client for TLS Spoofing
 
-TBD
+I designed an HTTP client that allows for spoofing of TLS Client-Hello packets. These inital packets are used in many bot protections and allowed for fine-tuning of our scrapers to look like authentic browsers, even past a User-Agent modification. The library was written in Node.js and bootstrapped to a Go program that facilitated the network requests.
 
 ## Simple Monitors - Grafana Implementation
 
-TBD
+I implemented Grafana and Prometheus to get live stats on our distribution pipeline and overall Kubernetes cluster health. Below is an abbrevatied view of the dashboard I created.
 
 ![Image](img/graph.png)
