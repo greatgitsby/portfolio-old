@@ -3,7 +3,7 @@ title: projects
 description: A few of the projects I have worked on.
 published: true
 createdAt: '2021-07-13T00:00:00.000Z'
-updatedAt: '2021-09-01T05:47:25.215Z'
+updatedAt: '2021-09-01T05:50:36.430Z'
 ---
 
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
@@ -19,6 +19,10 @@ I created a website for the wedding of myself and my super awesome fiancée Aver
 This website is for my Servant Engineering project during my third year at Fox. We created a workflow and set of resources for teachers at a local high school to submit project ideas and have us create what they had envisioned. Feel free to view it at [gfuprojects.com](https://gfuprojects.com). The source is located [here](https://github.com/greatgitsby/gfu-project-site).
 
 # work
+## e&j gallo winery - aws guardduty alert and auto-remediation system
+
+I developed an alert and auto-remediation system powered by AWS GuardDuty, a threat detection service powered by machine learning. Personnel are notified via Microsoft Teams and compromised resources are contained or disabled when GuardDuty detects a new Finding, all in real-time. Implemented with Lambda, SQS, CloudFormation, Secrets Manager, and some vendor APIs to facilitate remediations.
+
 ## simple monitors - client dashboard
 
 I built a dashboard for Simple Monitors clients to manage their webhook configurations, authentication, and release channels. It leverages HTML/CSS/jQuery and is served by a simple Node.js application and it runs on a simple Heroku configuration. 
