@@ -4,7 +4,8 @@
     "build": "next build && next export",
     "lint": "next lint",
     "lint:staged": "lint-staged",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
