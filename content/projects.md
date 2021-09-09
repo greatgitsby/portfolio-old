@@ -9,6 +9,16 @@ updatedAt: '2021-09-01T05:50:36.430Z'
 The following is a collection of projects I have worked on in the past for both university, current, and past jobs. Any source code that is publicly available can be found [on my GitHub](https://github.com/greatgitsby).
 
 # personal
+
+## [portfolio (this site)](https://treymoen.com)
+
+I created a website to hold portfolio items like this, my resume, as well as
+create "blog-like" posts to keep track of my own personal development.
+It is a Markdown-based blog site built on [Next.js](https://nextjs.org) and is
+hosted entirely inside AWS using their [Amplify](https://aws.amazon.com/amplify)
+service. It is hosted on my [GitHub](https://github.com/greatgitsby/portfolio)
+if you would like to view the source.
+
 ## [wedding website](https://owen2moen.com)
 
 I created a website for the wedding of myself and my super awesome fiancée Avery Owen. It will soon have RSVP functionality, custom wedding invite details, a page for our registry links, as well as a gallery of images on the homepage. Feel free to view it at [owen2moen.com](https://owen2moen.com).
