@@ -32,10 +32,6 @@ function Homepage(props) {
           <LinkedIn style={iconColor} />
         </IconButton>
         
-        <IconButton href="https://instagram.com/treymoen" aria-label="instagram" target="blank">
-          <Instagram style={iconColor} />
-        </IconButton>
-        
         <IconButton href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
           <MailOutlineRounded style={iconColor} />
         </IconButton>
