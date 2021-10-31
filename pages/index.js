@@ -23,19 +23,15 @@ function Homepage(props) {
       </div>
 
       <div className="icons">
-        
         <IconButton href="https://github.com/greatgitsby" aria-label="github" target="blank">
           <GitHub style={iconColor} />
         </IconButton>
-        
         <IconButton href="https://linkedin.com/in/trey-moen" aria-label="linkedin" target="blank">
           <LinkedIn style={iconColor} />
         </IconButton>
-        
         <IconButton href="mailto:tmoen18@georgefox.edu" aria-label="mail" target="blank">
           <MailOutlineRounded style={iconColor} />
         </IconButton>
-      
       </div>
 
       <span className="subtitle">posts</span>
@@ -48,7 +44,7 @@ function Homepage(props) {
                 <Link href={`/posts/${p.slug}`} passHref>
                   <a>{p.title}</a>
                 </Link>
-                <span className="blog-entry-text">{p.createdAt.toLocaleDateString()} - {p.description}</span>
+                <span className="blog-entry-text">{p.createdAt} - {p.description}</span>
               </li>
             ))
           }
@@ -71,10 +67,10 @@ export const getStaticProps = async () => {
       .map(async (filename) => {
         const content = await import(`../content/${filename}`);
         const frontmatter = matter(content.default);
-        
+
         frontmatter.data.slug = path.parse(filename).name;
-        frontmatter.data.createdAt = new Date(frontmatter.data.createdAt);
-        frontmatter.data.updatedAt = new Date(frontmatter.data.updatedAt);
+        frontmatter.data.createdAt = new Date(frontmatter.data.createdAt).toLocaleDateString();
+        frontmatter.data.updatedAt = new Date(frontmatter.data.updatedAt).toLocaleDateString();
 
         return Promise.resolve({ ...frontmatter.data });
       })
