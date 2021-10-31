@@ -19,7 +19,7 @@ function Author() {
       <p>jnj software ltd</p>
 
       <h3>certifications</h3>
-      <p>aws certified cloud practicioner - july '21</p>
+      <p>aws certified cloud practicioner - july 2021</p>
 
       <h3>a short biography I wrote for the GFU IGNITE mentorship program</h3>
       <p>
