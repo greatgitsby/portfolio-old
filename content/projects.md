@@ -3,7 +3,7 @@ title: projects
 description: A few of the projects I have worked on.
 published: true
 createdAt: '2021-07-13T00:00:00.000Z'
-updatedAt: '2021-09-10T02:37:17.492Z'
+updatedAt: '2021-11-11T19:41:23.490Z'
 ---
 
 The following is a collection of projects I have worked on in the past for both
@@ -96,4 +96,4 @@ I implemented Grafana and Prometheus to get live stats on our distribution
 pipeline and overall Kubernetes cluster health. Below is an abbrevatied view
 of the dashboard I created.
 
-![Image](img/graph.png)
+![Grafana dashboard](img/graph.png)
