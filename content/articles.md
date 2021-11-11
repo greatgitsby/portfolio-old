@@ -3,7 +3,7 @@ title: articles
 description: A collection of articles that have influenced my thinking.
 published: true
 createdAt: '2021-07-14T00:00:00.000Z'
-updatedAt: '2021-09-10T02:37:17.490Z'
+updatedAt: '2021-11-11T19:51:35.685Z'
 ---
 
 This curated list of articles have informed my experiences as a developer
@@ -16,4 +16,4 @@ All were likely curated [here](https://news.ycombinator.com).
 - [**Code-first vs. Product-first** - Zach Lloyd](https://thezbook.com/code-first-vs-product-first)
 
 If you have any recommendations on articles I should read, send them my
-way to *tmoen18 (at) georgefox (dot) edu*.
+way to *trey (at) moen (dot) ai*.
