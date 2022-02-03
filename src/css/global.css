@@ -22,33 +22,42 @@ svg {
 }
 
 .title {
-  font-size: 56px;
+  font-size: 3.5em;
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 1.5em;
+}
+
+.post-header {
+  margin: auto;
 }
 
 .icons {
-  padding: 15px 0 15px 0;
-  margin-left: -10px;
+  margin: auto;
+  padding-top: 1em;
 }
 
 .header {
-  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding: 3em 0 3em 0;
 }
 
-.header-text {
-  padding: 0 20px 0 0;
-  font-size: 19px;
+.header-text-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
 }
 
 .text-link {
   border: 2px;
 }
 
-.blog-section {
-  padding: 1vh 0 0 0;
+.blog {
+  margin: auto;
+  max-width: 800px;
 }
 
 .blog-image {
@@ -59,34 +68,30 @@ svg {
   font-size: 18px;
 }
 
-.blog-section div {
-  max-width: 800px;
-}
-
-.blog-section ul {
+.blog ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.blog-section li {
+.blog li {
   font-size: 24px;
   border-bottom: 1px solid #ccc;
   padding: 10px 0 10px 0px;
 }
 
-.blog-section li:first-child {
+.blog li:first-child {
   font-size: 24px;
   border-top: 1px solid #ccc;
   padding: 10px 0 10px 0px;
 }
 
-.blog-section li:last-child {
+.blog li:last-child {
   border: none;
 }
 
 @media screen and (min-width: 550px) {
-  .blog-section li a {
+  .blog li a {
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -99,16 +104,29 @@ svg {
     transition: font-size 0.3s ease, background-color 0.3s ease;
   }
 
-  .blog-section li a:hover {
+  .blog li a:hover {
     font-size: 30px;
   }
 }
 
-.blog-section li a {
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.blog li a {
   text-decoration: none;
   font-weight: bold;
   display: block;
   max-width: 100%;
 }
 
+.pfp img {
+  border-radius: 50%;
+}
 
+.pfp {
+  display: flex;
+  align-self: center;
+}
