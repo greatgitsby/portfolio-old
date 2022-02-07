@@ -10,6 +10,7 @@ import Image from "next/image";
 import { IconButton } from "@material-ui/core";
 
 import Pfp from "../public/img/me.jpeg";
+import Head from "next/head";
 
 function Homepage(props) {
   const iconColor = { color: "#5f0d0e" };
@@ -18,6 +19,12 @@ function Homepage(props) {
 
   return (
     <div className="blog">
+      <Head>
+        <meta name="og:title" content="trey moen" />
+        <meta name="og:description" content="Blog posts, résumé, projects. A peek into my life." />
+        <meta name="description" content="Blog posts, résumé, projects. A peek into my life." />
+      </Head>
+
       <div className="header">
         <div className="pfp">
           <Image width={175} height={175} src={Pfp} alt="A picture of Trey" loader={imgLoader} unoptimized />

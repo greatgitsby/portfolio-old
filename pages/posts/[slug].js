@@ -33,7 +33,9 @@ function PostTemplate({ content, data }) {
     <>
       <Head>
         <title>{frontmatter.title}</title>
-        <meta property="og:title" content={frontmatter.title + " - trey moen"} />
+        <meta property="og:title" content={(frontmatter.title || "") + " - trey moen"} />
+        <meta name="og:description" content={frontmatter.description || ""} />
+        <meta name="description" content={frontmatter.description || ""} />
       </Head>
 
       <h1>{frontmatter.title}</h1>
