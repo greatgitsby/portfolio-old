@@ -15,9 +15,9 @@ export default function TreySite({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff" />
         <meta property="og:title" content="trey moen" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://treymoen.dev/" />
+        <meta property="og:url" content="https://treymoen.com/" />
         <meta property="og:description" content="Blog posts, résumé, projects. A peek into my life." />
-        <meta property="og:image" content="/img/meandyou.jpg" />
+        <meta property="og:image" content="/img/me.jpg" />
       </Head>
       <Component {...pageProps} />
     </>
