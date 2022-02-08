@@ -3,7 +3,7 @@ title: articles
 description: A collection of articles that have influenced my thinking.
 published: true
 createdAt: '2021-07-14T00:00:00.000Z'
-updatedAt: '2022-02-07T23:44:39.502Z'
+updatedAt: '2022-02-08T00:07:35.401Z'
 ---
 
 This curated list of articles have informed my experiences as a developer
@@ -46,4 +46,4 @@ All were likely curated [here](https://news.ycombinator.com).
 - [**building a modern home (2021)** - Johnny Rodgers](https://johnnyrodgers.is/building-a-modern-home)
 
 If you have any recommendations on articles I should read, send them my
-way to *trey (at)**moen (dot)**ai*.
+way to [**trey@moen.ai**](mailto:trey@moen.ai).
